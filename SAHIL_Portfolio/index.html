@@ -25,25 +25,25 @@
   <body class="font-['Platypi'] text-base font-normal">
     <!-- HEADER SECTION START HERE -->
     <header
-      class="text-white w-screen flex justify-between items-center fixed top-0 left-0 z-10 px-10 py-3 bg-slate-800 bg-opacity-50"
+      class="text-gray-200 w-screen flex justify-between items-center fixed top-0 left-0 z-10 px-10 py-1 bg-transparent shadow bg-opacity-50 backdrop-blur"
     >
-      <h1 class="text-lg font-semibold p-1 border border-white">Sg</h1>
+     <a href="#home"><h1 class="text-lg font-semibold p-1 px-2 border hover:bg-gray-900 border-gray-900   hover:rounded-full  transition-colors" >Sg</h1></a>
       <!-- NAVBAR SECTION STARTS HERE -->
       <nav class="hidden md:block" id="nav">
         <ul class="md:flex text-center justify-center items-center">
-          <li class="px-5 py-2 border-b border-gray-900 md:border-0">
+          <li class="px-5 py-1 hover:text-gray-900 border-b border-gray-900 md:border-0">
             <a href="#home">HOME</a>
           </li>
-          <li class="px-5 py-2 border-b border-gray-900 md:border-0">
+          <li class="px-5 py-1 hover:text-gray-900 transition-colors">
             <a href="#about">ABOUT</a>
           </li>
-          <li class="px-5 py-2 border-b border-gray-900 md:border-0">
+          <li class="px-5 py-1 hover:text-gray-900 transition-colors">
             <a href="#resume">RESUME</a>
           </li>
-          <li class="px-5 py-2 border-b border-gray-900 md:border-0">
+          <li class="px-5 py-1 hover:text-gray-900 transition-colors">
             <a href="#projects">PROJECT</a>
           </li>
-          <li class="px-5 py-2 border-b border-gray-900 md:border-0">
+          <li class="px-5 py-1 hover:text-gray-900 transition-colors">
             <a href="#contact">CONTACT</a>
           </li>
           <li
@@ -61,16 +61,15 @@
         <i class="fa-solid fa-bars p-2"></i>
       </button>
     </header>
-
     <!-- HEADER SECTION ENDS -->
     <!-- HOME SECTION START HERE -->
     <main
     id="home"
-    class="text-gray-100 flex justify-center items-center h-screen bg-cover bg-center"
+    class="text-gray-100 flex justify-center items-center h-screen bg-cover bg-center bg-gradient-to-t from-[#233128] to-[#10429345]"
     style="background-image: url(./images/bg_main.jpg)"
     >
     <div
-    class="md:w-fit w-10/12 border p-5 text-center bg-transparent backdrop-blur-sm rounded-md md:rounded-xl"
+    class="md:w-fit w-10/12 border border-gray-300 rounded-md  p-5 text-center bg-transparent backdrop-blur-sm "
     >
     <h1 class="md:text-4xl font-semibold text-xl py-4">
           I'M SAHIL GHADIGAONKAR
@@ -84,22 +83,37 @@
           Bring a blend of technical expertise and creative problem-solving
           skills to every project.
         </p>
-        <div class="flex justify-center m-5">
-          <button class="border-2 border-purple-500 mx-2 px-3 py-2 rounded hover:bg-[#4e235a]  transition">
-            Collab
-          </button>
-          <a
-          class="border-2 border-purple-500 mx-1 px-3 py-2 rounded hover:bg-[#4e235a]  transition "
+        <ul class="md:flex   justify-center m-5">
+          <li class="my-2 border-2 text-gray-800 border-gray-600 mx-2  px-3 py-2 rounded-md hover:text-white  hover:bg-gray-600  transition">
+          <a href="#contact">Collab</a>
+          </li>
+          <li
+          class=" my-2 border-2 text-gray-800 border-gray-600 mx-2 px-3 py-2 rounded-md hover:text-white  hover:bg-gray-600 transition"
           href="#projects"
-          >See Projects</a
-          >
-        </div>
+          ><a href="#projects">See Projects</a></li>
+        </ul>
       </div>
     </main>
     <!-- HOME SECTION ENDS HERE -->
     <!-- ABOUT SECTION START HERE -->
-    <section id="about" class="flex justify-center items-start my-5 bg-gray-800 h-96">
-
+    <section id="about" class="md:flex flex-wrap justify-center items-start my-5 p-5 bg-gray-800 ">
+      <aside>
+        <img class="md:h-[500px] h-72  border-gray-600 hover:border hover:p-4 box-border md:m-5  mx-auto opacity-95  hover:scale-90 transition-all" src="./images/profilepic.jpg" alt="">
+      </aside>
+      <article class="md:h-[500px]  text-left text-gray-400  md:w-[500px] m-5">
+        <div class="p-2">
+          <p class="text-lg font-semibold m-2">About Me</p>
+          <p class="text-base">A recent graduate with a degree in Information Technology. Armed with a strong academic foundation and hands-on experience gained through coursework and personal projects, I bring a solid understanding of Java programming fundamentals. My passion for Frontend development in React and JS, coupled with my ability to quickly grasp new concepts, makes me a dedicated and enthusiastic candidate.</p>
+        </div>
+        <div>
+          <p class="text-lg font-semibold m-2">Cheak out my works</p>
+          <ul class="md:flex inline-block ">
+          <li class="mx-2 m-1 px-3 py-1 hover:border border-gray-700 hover:bg-gray-700  rounded-md hover:text-gray-200 transition-colors "><a  href=""><i class="text-lg pr-2 fa-brands fa-square-github"></i>Github</a><li>
+          <li class="mx-2 m-1 px-3 py-1 hover:border border-gray-700 hover:bg-gray-700  rounded-md hover:text-gray-200 transition-colors "><a  href=""><i class="text-lg pr-2 fa-brands fa-linkedin"></i>Linked-in</a></li>
+          <li class="mx-2 m-1 px-3 py-1 hover:border border-gray-700 hover:bg-gray-700  rounded-md hover:text-gray-200 transition-colors "><a  href=""><i class="text-lg pr-2 fa-solid fa-code"></i>Code Studio</a></li>
+          </ul>
+        </div>
+      </article>
     </section>
     <!-- ABOUT SECTION ENDS -->
     <!-- RESUME SECTION STARTS HERE -->
@@ -111,7 +125,13 @@
     <!-- CONTACT SECTION STARTS HERE -->
     <section id="contact"></section>
     <!-- CONTACT SECTION ENDS -->
-    
+    <footer class=" p-5 h-[200px] bg-gray-800 flex md:justify-center items-center">
+      <ul class="md:flex ">
+        <li class="mx-2 m-1 px-3 py-1  hover:text-gray-300 text-gray-500 transition-colors "><a  href=""><i class="text-lg pr-2 fa-brands fa-square-github"></i>Github</a><li>
+        <li class="mx-2 m-1 px-3 py-1  hover:text-gray-300 text-gray-500 transition-colors "><a  href=""><i class="text-lg pr-2 fa-brands fa-linkedin"></i>Linked-in</a></li>
+        <li class="mx-2 m-1 px-3 py-1  hover:text-gray-300 text-gray-500 transition-colors "><a  href=""><i class="text-lg pr-2 fa-solid fa-code"></i>Code Studio</a></li>
+      </ul>
+    </footer>
     <!-- JAVASCRIPT NOTATIONS -->
     <!-- <script src="./script.js"></script> -->
     <!-- JAVASCRIPT NOTATIONS -->
